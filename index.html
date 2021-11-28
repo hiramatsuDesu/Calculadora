@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Calculadora boot</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="calculo.js"></script>
+</head>
+
+<body>
+
+    <form action="#" name=" calculaora" class="form-group">
+
+    <section class="container">
+
+        <div class="row no-gutters">
+            <div class="col">
+                Calculadora
+                
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col">
+                <div class="card-body">
+                    <p id="visor">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col">
+                <input type="button" class="btn btn-info" value="
+                Ret" style="width: 80px;" onclick="retroceso()" />
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-info" value="
+                CE" style="width: 80px;" onclick="borradoParcial()" />
+           </div>
+           <div class="col">
+                <input type="button" class="btn btn-info" value="
+                C" style="width: 80px;" onclick="borradoTotal()" />
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col">
+                <input type="button" class="btn btn-light" value="7" onclick="numero('7')" />
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-light" value="8" onclick="numero('8')" />
+                
+           </div>
+           <div class="col">
+            <input type="button" class="btn btn-light" value="9" onclick="numero('9')">
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-primary" value="/" onclick="operador('/')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-warning" value="Raiz" onclick="raiz()" />
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col">
+                <input type="button" class="btn btn-light" value="4" onclick="numero('4')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-light" value="5" onclick="numero('5')" />
+                
+           </div>
+           <div class="col">
+            <input type="button" class="btn btn-light" value="6" onclick="numero('6')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-primary" value="*" onclick="operador('*')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-warning" value="%" onclick="porcentaje()">
+                
+            </div>
+        </div>
+
+
+        <div class="row no-gutters">
+            <div class="col">
+                <input type="button" class="btn btn-light" value="1" onclick="numero('1')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-light" value="2" onclick="numero('2')" />
+                
+           </div>
+           <div class="col">
+            <input type="button" class="btn btn-light" value="3" onclick="numero('3')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-primary" value="-" onclick="operador('-')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-warning" value="1/x" onclick="invert()" />
+                
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col">
+                <input type="button" class="btn btn-light" value="0" onclick="numero('0')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-warning" value="+/=" onclick="opuesto()" />
+           </div>
+           <div class="col">
+            <input type="button" class="btn btn-light" value="." onclick="numero('.')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-primary" value="+" onclick="operador('+')" />
+                
+            </div>
+            <div class="col">
+                <input type="button" class="btn btn-success" value="=" onclick="igual()" />
+                
+            </div>
+        </div>
+
+
+    </section>
+
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+</body>
+
+
+
+</html>
